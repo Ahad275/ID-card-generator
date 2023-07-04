@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student College ID Card Generator</title>
+    <style>
+        /* CSS styles for the ID card */
+        #id-card {
+            width: 400px;
+            height: 250px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        #id-card img {
+            width: 80px;
+            height: 100px;
+            float: right;
+            margin-top: 22px;
+        }
+
+        #id-card h2 {
+            margin: 0;
+            margin-bottom: 10px;
+            margin-top: 27px;
+        }
+
+        #id-card p {
+            margin-bottom: 15px;
+            margin: 5px 0;
+        }
+
+        .con {
+            background-color: antiquewhite;
+            height: fit-content;
+            width: fit-content;
+            margin: auto;
+            border: 2px solid black;
+            border-radius: 22px;
+        }
+
+        #id-card {
+            margin: auto;
+            border: 2px solid black;
+            margin-top: 8px;
+            height: 200px;
+            border-radius: 10px;
+            background-color: rgb(201, 222, 215);
+        }
+
+        #card-image {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        label {
+            margin-bottom: 20px;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            background-color: black;
+            color: white;
+        }
+
+        .container1 {
+            margin-bottom: 20px;
+        }
+
+        #generate-card {
+            margin-top: 15px;
+            border: 1px solid black;
+            background-color: #9ec0c0;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+        #generate-card:hover{
+            background-color: aqua;
+        }
+        
+        #image {
+            margin-left: 90px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <div class="container">
+            <h1>Student College ID Card Generator</h1>
+
+            <div id="input-section">
+                <h2>Enter Student Details:</h2>
+                <label for="name"> Enter Name:</label> <br>
+                <input type="text" id="name">
+                <br>
+                <br>
+                <label for="college">College Name:</label> <br>
+                <input type="text" id="college">
+                <br>
+                <br>
+                <label for="location"> Enter Location:</label> <br>
+                <input type="text" id="location">
+                <br>
+                <br>
+                <label for="image">Upload Student's Image:</label> <br>
+                <input type="file" id="image">
+                <br>
+                <button id="generate-card">Generate Card</button>
+            </div>
+        </div>
+        <hr style="margin-top: 40px; ">
+        <div class="container1">
+            <div id="card-section">
+                <h2 style="text-align: center;">Virtual ID Card:</h2>
+                <div id="id-card">
+                    <img id="card-image" src="" alt="Student Image">
+                    <h2 id="card-name"> Name:</h2>
+                    <p id="card-college">College Name:</p>
+                    <p id="card-location">Location:</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="idscript.js"></script>
+</body>
+
+</html>
